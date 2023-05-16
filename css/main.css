@@ -136,3 +136,23 @@ body {
 .our-work .box:hover::before {
   transform: translateX(0);
 }
+
+.stuff .description {
+  max-width: 500px;
+}
+
+.team {
+  background-color: var(--section-color);
+}
+
+.team h2 {
+  color: var(--yellow-color);
+}
+
+.team .box h4 {
+  background-color: var(--green-color);
+}
+
+.project {
+  background-color: var(--dark-color);
+}
