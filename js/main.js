@@ -1,6 +1,6 @@
 // Filter Imgs
-let switchersLi = document.querySelectorAll(".our-work ul li");
-let boxs = document.querySelectorAll(".our-work .row > div");
+let switchersLi = document.querySelectorAll(".portfolio ul li");
+let boxs = document.querySelectorAll(".portfolio .row > div");
 
 switchersLi.forEach(li => {
   li.addEventListener("click", function() {

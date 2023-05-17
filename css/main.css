@@ -55,12 +55,12 @@ body {
   border-color: var(--green-color);
 }
 
-.landing {
+.home {
   background-color: var(--dark-color);
   min-height: calc(100vh - 72px);
 }
 
-.features .main-title::before {
+.main-title::before {
   content: "";
   position: absolute;
   bottom: -20px;
@@ -71,53 +71,51 @@ body {
   transform: translateX(-50%);
 }
 
-.features .feat-icons {
+.services .service-icons {
   height: 200px;
 }
 
-.features .feat-icons svg {
+.services .service-icons svg {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.features .feat-icons .number {
+.services .service-icons .number {
   font-size: 12rem;
   color: var(--section-color);
 }
 
-.features .feat-icons .icon {
+.services .service-icons .icon {
   color: var(--green-color);
 }
 
-.features .feature h4 {
+.services .service h4 {
   color: var(--yellow-color);
 }
 
-.our-work {
+.portfolio {
   background-color: var(--section-color);
 }
 
-.our-work ul li {
+.portfolio ul li {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
-.our-work ul li.active {
+.portfolio ul li.active {
   background-color: var(--red-color);
   color: var(--yellow-color);
 }
 
-.our-work ul li:not(.active):hover {
+.portfolio ul li:not(.active):hover {
   color: var(--red-color);
 }
 
-.our-work .box {
+.portfolio .box {
   padding: 5px;
-  overflow: hidden;
-  position: relative;
 }
 
-.our-work .box::before {
+.portfolio .box::before {
   content: attr(data-work);
   position: absolute;
   background-color: rgba(51, 209, 204, 0.76);
@@ -133,7 +131,7 @@ body {
   transition: 0.5s;
 }
 
-.our-work .box:hover::before {
+.portfolio .box:hover::before {
   transform: translateX(0);
 }
 
@@ -155,4 +153,71 @@ body {
 
 .project {
   background-color: var(--dark-color);
+}
+
+.about {
+  background-color: var(--yellow-color);
+}
+
+.about .input-text {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.about .input-text:focus {
+  outline: none;
+}
+
+.about .input-text::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .about .input-text {
+    margin-bottom: 5px;
+  }
+  .about .input-text::placeholder {
+    text-align: center;
+  }
+}
+
+.about .submit {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .copyright > span {
+  color: var(--green-color);
+}
+
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+
+.footer .contact ul svg {
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 767px) {
+  .footer .contact ul {
+    justify-content: center;
+  }
+}
+
+.footer .contact .facebook {
+  background-color: #1877f2;
+}
+.footer .contact .twitter {
+  background-color: #1d41f2;
+}
+.footer .contact .linkedin {
+  background-color: #0077b5;
+}
+.footer .contact .youtube {
+  background-color: #ff0000;
 }
