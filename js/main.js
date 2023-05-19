@@ -16,3 +16,19 @@ switchersLi.forEach(li => {
     });
   });
 });
+
+// Active Links With Scroll
+let sections = document.querySelectorAll(".home, .services, .portfolio, .stuff, .about");
+let links = document.querySelectorAll(".navbar .navbar-nav li a");
+
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let id = sec.getAttribute("id");
+    if (window.scrollY >= sec.offsetTop - 200 && window.scrollY < sec.offsetTop - 200 + sec.offsetHeight) {
+      links.forEach(link => {
+        link.classList.remove("active");
+        document.querySelector(`.navbar .navbar-nav li a[href*= "${id}"]`).classList.add("active");
+      });
+    }
+  });
+}
